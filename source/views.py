@@ -10,11 +10,11 @@ def about():
 	return render_template('about.html')
 
 @app.route('/experience')
-def about():
+def experience():
 	return render_template('experience.html')
 
 @app.route('/raiding')
-def about():
+def raiding():
 	return render_template('raiding.html')
 
 @app.route('/dungeons')
