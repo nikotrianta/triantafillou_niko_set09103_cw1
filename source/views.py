@@ -65,10 +65,6 @@ def wm():
 def raid():
 	return render_template('raid.html')
 
-@app.route('/mythics')
-def mythics():
-	return render_template('mythics.html')
-
 @app.route('/characters')
 def characters():
 	return render_template('characters.html')
