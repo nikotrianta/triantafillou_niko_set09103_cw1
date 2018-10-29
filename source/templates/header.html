@@ -1,35 +1,44 @@
 {% block content %}
 <html>
+
 <head>
- <title>Assessment 1</title>
- <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
- <style>
-  body{
-   padding-top: 50px;
-  }
- </style>
+    <title>Assessment 1</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+    <style>
+        body {
+            padding-top: 50px;
+        }
+    </style>
 </head>
+
 <body>
- <nav class="navbar navbar-inverse navbar-fixed-top">
- <div class="container">
-  <div class="navbar-header">
-   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
     <span class="sr-only">Toggle Navigation</span>
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
    </button>
-   <a class="navbar-brand" href="#">Assessment 1</a>
-  </div>
-  <div>
-  <ul class="nav navbar-nav">
-   <li><a href="/index">Home</a></li>
-   <li><a href="/about">About</a></li>
-   <li><a href="/dungeons">Dungeons</a></li>
-   <li><a href="/mythics">Mythics</a></li>
-   <li><a href="/characters">Characters</a></li>
-  </ul>
-  </div>
-</div>
-</nav>
-{% endblock %}
+                <a class="navbar-brand" href="#">Assessment 1</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li><a href="/index">Home</a></li>
+                    <li class="dropdown">
+                        <a href="/about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/experience">Experience</a></li>
+                            <li><a href="/raiding">Raiding</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/dungeons">Dungeons</a></li>
+                    <li><a href="/mythics">Mythics</a></li>
+                    <li><a href="/characters">Characters</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {% endblock %}
