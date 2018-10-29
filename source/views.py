@@ -25,6 +25,42 @@ def dungeons():
 def dungeonslist():
 	return render_template('dungeonslist.html')
 
+@app.route('/fh')
+def fh():
+	return render_template('fh.html')
+
+@app.route('/kr')
+def kr():
+	return render_template('kr.html')
+
+@app.route('/ml')
+def ml():
+	return render_template('ml.html')
+
+@app.route('/sob')
+def sob():
+	return render_template('sob.html')
+
+@app.route('/sots')
+def sots():
+	return render_template('sots.html')
+
+@app.route('/td')
+def td():
+	return render_template('td.html')
+
+@app.route('/tos')
+def tos():
+	return render_template('tos.html')
+
+@app.route('/ur')
+def ur():
+	return render_template('ur.html')
+
+@app.route('/wm')
+def wm():
+	return render_template('wm.html')
+
 @app.route('/raid')
 def raid():
 	return render_template('raid.html')
