@@ -21,6 +21,14 @@ def raiding():
 def dungeons():
 	return render_template('dungeons.html')
 
+@app.route('/dungeonslist')
+def dungeonslist():
+	return render_template('dungeonslist.html')
+
+@app.route('/raid')
+def raid():
+	return render_template('raid.html')
+
 @app.route('/mythics')
 def mythics():
 	return render_template('mythics.html')
