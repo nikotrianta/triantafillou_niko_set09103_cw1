@@ -68,3 +68,47 @@ def raid():
 @app.route('/characters')
 def characters():
 	return render_template('characters.html')
+
+@app.route('/war')
+def war():
+	return render_template('war.html')
+
+@app.route('/pal')
+def pal():
+	return render_template('pal.html')
+
+@app.route('/hun')
+def hun():
+	return render_template('hun.html')
+
+@app.route('/rog')
+def rog():
+	return render_template('rog.html')
+
+@app.route('/pri')
+def pri():
+	return render_template('pri.html')
+
+@app.route('/sha')
+def sha():
+	return render_template('sha.html')
+
+@app.route('/mag')
+def mag():
+	return render_template('mag.html')
+
+@app.route('/wlk')
+def wlk():
+	return render_template('wlk.html')
+
+@app.route('/mon')
+def mon():
+	return render_template('mon.html')
+
+@app.route('/dru')
+def dru():
+	return render_template('dru.html')
+
+@app.route('/dea')
+def dea():
+	return render_template('dea.html')
