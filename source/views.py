@@ -112,3 +112,7 @@ def dru():
 @app.route('/dea')
 def dea():
 	return render_template('dea.html')
+
+@app.errorhandler(404)
+def page_not_found(error):
+	return render_template('page_not_found.html'), 404
