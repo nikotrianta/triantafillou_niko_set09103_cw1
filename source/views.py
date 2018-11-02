@@ -27,7 +27,7 @@ def dungeonslist():
 
 @app.route('/fh')
 def fh():
-	return render_template('fh.html')
+	return render_template('dungeonslist/fh.html')
 
 @app.route('/kr')
 def kr():
