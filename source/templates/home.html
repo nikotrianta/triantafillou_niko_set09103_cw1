@@ -1,22 +1,30 @@
 {% extends "index.html" %} {% block content %}
 <br>
-<ol class="breadcrumb">
-    <li class="active">Home</li>
-</ol>
-<img src="static/images/game-logo-wow.png" class="img-responsive center-block" style="width:50%" alt="WoW Logo">
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+    </ol>
+</nav>
+
+<img src="static/images/game-logo-wow.png" class="img-responsive mx-auto d-block" style="width:50%" alt="World of Warcraft">
+
 <h1>Home</h1>
 <p class="lead">The purpose of this website is to showcase Jinja2, Python and Flask working in tandem to promote an online directory tailored to my gaming passions. My name is Niko, and this website will include information regarding the current state of the World of
     Warcraft game according to my experience, alongside end-game dungeon overviews and the character profiles that I have dedicated my time to playing. </p>
 <p class="lead">To ensure the background information I provide is digestible, please see the below links to navigate to other areas of the website pertaining to the About section.</p>
 <div class="container">
-    <div class="row">
-        <div class="col-3">
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-2">
+        </div>
+        <div class="col-md-auto">
             <div class="table-responsive">
                 <table class="table">
                     <th><a href="/experience">Experience</a></th>
                     <th><a href="/raiding">Raiding</a></th>
                 </table>
             </div>
+        </div>
+        <div class="col col-lg-2">
         </div>
     </div>
 </div>
