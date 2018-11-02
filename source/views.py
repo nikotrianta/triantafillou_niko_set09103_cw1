@@ -7,7 +7,7 @@ def index():
 
 @app.route('/home')
 def home():
-	return render_template('templates/home.html')
+	return render_template('/source/templates/home.html')
 
 @app.route('/experience')
 def experience():
