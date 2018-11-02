@@ -65,6 +65,10 @@ def wm():
 def raid():
 	return render_template('raid.html')
 
+@app.route('/factions')
+def factions():
+	return render_template('factions.html')
+
 @app.route('/classes')
 def characters():
 	return render_template('classes.html')
