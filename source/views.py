@@ -65,9 +65,9 @@ def wm():
 def raid():
 	return render_template('raid.html')
 
-@app.route('/characters')
+@app.route('/classes')
 def characters():
-	return render_template('characters.html')
+	return render_template('classes.html')
 
 @app.route('/war')
 def war():
