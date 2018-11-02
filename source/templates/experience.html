@@ -1,11 +1,16 @@
 {% extends "home.html" %} {% block content %}
 <br>
-<ol class="breadcrumb">
-    <li><a href="/home">Home</a></li>
-    <li class="active">Experience</li>
-    <li><a href="/raiding">Raiding</a></li>
-</ol>
-<img src="static/images/sonic-running-through-sega-logo.png" class="img-responsive center-block" style="width:50%" alt="Sonic Sega Logo">
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+
+        <li class="breadcrumb-item"><a href="/home">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Experience</li>
+        <li class="breadcrumb-item"><a href="/raiding">Raiding</a></li>
+    </ol>
+</nav>
+
+<img src="static/images/sonic-running-through-sega-logo.png" class="img-responsive mx-auto d-block" style="width:50%" alt="Sonic Sega Logo">
+
 <h1>Experience</h1>
 <p>I have played MMORPGs (Massively Multiplayer Online Role-Playing Game) fairly exclusively over the last 10 years, ever since I began my online journey with World of Warcraft (WoW): Wrath of the Lich King. Before I began my MMORPG passion, I was always
     interested in playing video games with friends and family, dating back to the Sega Mega Drive, where my mother and I used to play Desert Strike and Sonic the Hedgehog together.</p>
@@ -17,4 +22,4 @@
     of the iconic intellectual property and, arguably, was my most passionate online experience so far.</p>
 <p>I made a lot of friends on SWTOR, as unlike WoW, which was a very inclusive experience shared between my closest real-life friends, and I still play with them to this day on various other platforms such as For Honor, Star Wars Battlefront, Heroes of the
     Storm, and most notably WoW.</p>
-<img src="static/images/tor-logo.png" class="img-responsive center-block" style="width:50%" alt="Star Wars: The Old Republic Logo"> {% endblock %}
+<img src="static/images/tor-logo.png" class="img-responsive mx-auto d-block" style="width:50%" alt="Star Wars: The Old Republic Logo"> {% endblock %}
