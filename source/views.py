@@ -77,6 +77,10 @@ def alliance():
 def horde():
 	return render_template('factionlist/horde.html')
 
+@app.route('/races')
+def races():
+	return render_template('races.html')
+
 @app.route('/classes')
 def characters():
 	return render_template('classes.html')
