@@ -1,12 +1,17 @@
 {% extends "dungeons.html" %} {% block content %}
 <br>
-<ol class="breadcrumb">
-    <li><a href="/dungeons">Dungeons</a></li>
-    <li><a href="/dungeonslist">Dungeons List</a></li>
-    <li class="active">Kings' Rest</li>
-</ol>
-<img src="static/images/bfa-logo.png" class="img-responsive center-block" style="width:50%" alt="Battle for Azeroth">
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/dungeons">Dungeons</a></li>
+        <li class="breadcrumb-item"><a href="/dungeonslist">Dungeons List</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Kings' Rest</li>
+
+    </ol>
+</nav>
+
+<img src="static/images/bfa-logo.png" class="img-responsive mx-auto d-block" style="width:50%" alt="Battle for Azeroth">
 <h1>Kings' Rest</h1>
+<img src="static/images/kr.jpg" class="img-responsive float-right">
 <p>Few places in Zandalar are more sacred than Kings' Rest. Every king, conqueror or tyrant who has held control of the Zandalari empire is housed within this great city of the dead to protect and honour not only their bodies, but also their spirits.</p>
 <p>Entry has historically been restricted solely to the Zandalari priesthood and royalty, but as Zul's dark magic winds its way through the tomb, a brave group of heroes must venture inside and put an end to the darkness that has found purchase here.</p>
-<img src="static/images/kr.jpg" class="img-responsive"> {% endblock %}
+{% endblock %}
