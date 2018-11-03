@@ -69,6 +69,14 @@ def raid():
 def factions():
 	return render_template('factions.html')
 
+@app.route('/alliance')
+def alliance():
+	return render_template('factionlist/alliance.html')
+
+@app.route('/horde')
+def horde():
+	return render_template('factionlist/horde.html')
+
 @app.route('/classes')
 def characters():
 	return render_template('classes.html')
