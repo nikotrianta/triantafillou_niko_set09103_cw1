@@ -1,13 +1,14 @@
 {% extends "characters.html" %} {% block content %}
 <br>
-<ol class="breadcrumb">
-    <li><a href="/characters">Characters</a></li>
-    <li class="active">Monk</li>
-</ol>
-<img src="static/images/bfa-logo.png" class="img-responsive center-block" style="width:50%" alt="Battle for Azeroth">
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/classes">Classes</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Death Knight</li>
+    </ol>
+</nav>
+
+<img src="static/images/bfa-logo.png" class="img-responsive mx-auto d-block" style="width:50%" alt="Battle for Azeroth">
 <h1>Monk</h1>
 <p>Monks are known for their skill in hand-to-hand fighting, relying on their fists and feet as much as their weapons. Monks can also specialise in calling upon the restorative power of the mists to heal allies.</p>
 <p><b>Role: </b>Tank, Healer or Melee Damage</p>
-<h2>Aseko</h2>
-<p>Aseko is the name of the Monk character that I currently play when a little bit more of diversity is required for my Guild's raids. Monks excell in healing where Paladins cannot, and so this characters value is quite favoured for certain encounters.</p>
-<img src="static/images/monk.JPG" class="img responsive center-block" style="width:20%" alt="Akesia, Holy Paladin">{% endblock %}
+{% endblock %}

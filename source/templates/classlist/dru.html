@@ -1,10 +1,13 @@
 {% extends "characters.html" %} {% block content %}
 <br>
-<ol class="breadcrumb">
-    <li><a href="/characters">Characters</a></li>
-    <li class="active">Druid</li>
-</ol>
-<img src="static/images/bfa-logo.png" class="img-responsive center-block" style="width:50%" alt="Battle for Azeroth">
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/classes">Classes</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Druid</li>
+    </ol>
+</nav>
+
+<img src="static/images/bfa-logo.png" class="img-responsive mx-auto d-block" style="width:50%" alt="Battle for Azeroth">
 <h1>Druid</h1>
 <p>Druids are shape-shifters with an affinity for the plant and animal kingdoms. Druids can specialise in healing, casting spells at range, or taking on the form of a cat or bear to fight in melee.</p>
 <p><b>Role: </b>Tank, Healer, Melee or Ranged Damage</p> {% endblock %}

@@ -1,10 +1,13 @@
 {% extends "characters.html" %} {% block content %}
 <br>
-<ol class="breadcrumb">
-    <li><a href="/characters">Characters</a></li>
-    <li class="active">Mage</li>
-</ol>
-<img src="static/images/bfa-logo.png" class="img-responsive center-block" style="width:50%" alt="Battle for Azeroth">
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/classes">Classes</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Mage</li>
+    </ol>
+</nav>
+
+<img src="static/images/bfa-logo.png" class="img-responsive mx-auto d-block" style="width:50%" alt="Battle for Azeroth">
 <h1>Mage</h1>
 <p>Mages are the iconic magic-users of Azeroth who learn their craft through intense research and study. They make up for their light armour with a potent array of offensive and defensive spells.</p>
 <p><b>Role: </b>Ranged Damage</p> {% endblock %}
