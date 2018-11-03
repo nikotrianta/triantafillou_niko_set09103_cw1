@@ -75,47 +75,47 @@ def characters():
 
 @app.route('/war')
 def war():
-	return render_template('war.html')
+	return render_template('classlist/war.html')
 
 @app.route('/pal')
 def pal():
-	return render_template('pal.html')
+	return render_template('classlist/pal.html')
 
 @app.route('/hun')
 def hun():
-	return render_template('hun.html')
+	return render_template('classlist/hun.html')
 
 @app.route('/rog')
 def rog():
-	return render_template('rog.html')
+	return render_template('classlist/rog.html')
 
 @app.route('/pri')
 def pri():
-	return render_template('pri.html')
+	return render_template('classlist/pri.html')
 
 @app.route('/sha')
 def sha():
-	return render_template('sha.html')
+	return render_template('classlist/sha.html')
 
 @app.route('/mag')
 def mag():
-	return render_template('mag.html')
+	return render_template('classlist/mag.html')
 
 @app.route('/wlk')
 def wlk():
-	return render_template('wlk.html')
+	return render_template('classlist/wlk.html')
 
 @app.route('/mon')
 def mon():
-	return render_template('mon.html')
+	return render_template('classlist/mon.html')
 
 @app.route('/dru')
 def dru():
-	return render_template('dru.html')
+	return render_template('classlist/dru.html')
 
 @app.route('/dea')
 def dea():
-	return render_template('dea.html')
+	return render_template('classlist/dea.html')
 
 @app.errorhandler(404)
 def page_not_found(error):
